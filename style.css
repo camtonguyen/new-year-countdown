@@ -80,8 +80,8 @@ h1 {
     background-color: black;
     opacity: 0;
     z-index: 3;
-    -webkit-animation: loadFirst 18s ; /* Chrome, Safari, Opera */
-    animation: loadFirst 18s ;
+    -webkit-animation: loadFirst 3s ; /* Chrome, Safari, Opera */
+    animation: loadFirst 3s ;
 }
 
 /* Chrome, Safari, Opera */
