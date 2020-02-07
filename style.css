@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=vietnamese');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1496478981722-3ae516118a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2547&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+body * {
+    z-index: 1;
+}
+
+main {
+    margin-top: -160px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    max-width: 830px;
+    text-align: left;
+}
+
+.year {
+    font-size: 200px;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: scale(2);
+}
+
+.time {
+    margin: 15px;
+}
+
+.time h2 {
+    margin: 0 0 3px;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 3;
+    -webkit-animation: loadFirst 18s ; /* Chrome, Safari, Opera */
+    animation: loadFirst 18s ;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loadFirst {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes loadFirst {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .time {
+        margin: 5px;
+    }
+    .time h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .time small {
+        font-size: 10px;
+    }
+}
