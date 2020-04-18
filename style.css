@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1496478981722-3ae516118a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2547&q=80');
+    background-image: url('./images/photo-1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -40,9 +40,9 @@ main {
 
 h1 {
     font-size: 30px;
-    margin-bottom: 40px;
-    max-width: 830px;
-    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
 }
 
 .year {
@@ -69,6 +69,7 @@ h1 {
 
 .time h2 {
     margin: 0 0 3px;
+    font-size: 30px;
 }
 
 .overlay {
@@ -96,11 +97,6 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
     .time {
         margin: 5px;
     }

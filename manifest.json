@@ -1,8 +1,8 @@
 {
-    "name": "Quotes & New Year Countdown Tab",
-    "version": "1.0",
+    "name": "New Year Countdown Tab",
+    "version": "1.1",
     "author": "Cam To",
-    "description": "Motivational quotes and new year countdown with each new tab.",
+    "description": "New year countdown with each new tab.",
     "manifest_version": 2,
     "incognito": "split",
     "chrome_url_overrides": {
